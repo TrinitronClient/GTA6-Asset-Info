@@ -65,8 +65,10 @@ Browser. Entries are exported on the fly into `<work>/gui_cache_v2`
   mounts (the real size is not decoded).
 - Orbit or fly camera; time of day, exposure, ambient, emissive and a wet
   look.
-- Per-material list with class, alpha mode, gap status and every texture
-  slot; show, hide and solo.
+- Per-material list with the shader name, class, alpha mode, gap status
+  and every texture slot with its parameter name (hash on hover); show,
+  hide and solo. The names come from `<work>/names/names.json`, which the
+  app builds in the background on first start.
 - **Screenshot** saves the 3D view and the window under the work directory.
 
 ## Map 2D tab

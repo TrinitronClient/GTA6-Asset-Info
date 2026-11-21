@@ -72,6 +72,11 @@ sixng list levels --rtype dr --name 'road' --streams     # include stream lists
 # Search names across all indexed archives
 sixng search 'elegy|buffalo' --archive levels
 
+# Name dictionary for shader, parameter and meta field hashes (~2 s; needs the
+# common index). Built from the install into <work>/names/names.json.
+sixng names
+sixng names --lookup bcf03fc1,c8e8c282     # every candidate name and its source
+
 # Describe one entry without writing files
 sixng inspect 'levels.rpf@10f2d2d010' --pretty
 ```

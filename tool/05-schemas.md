@@ -48,7 +48,9 @@ unknown). The grouping of slots into layers is confirmed. The weight
 channel and the layer-2 UV set are inferred, the base UV set is a weak
 inference, and the data and two-channel meanings are unknown.
 
-Each `textures[]` entry has `param`, `param_hash`, `hash64`, `hash32`,
+Each material has `shader_name_hash` and `shader_name` (null when the name
+is unknown; also in the GLB material `extras`; added 2026-11-21). Each
+`textures[]` entry has `param`, `param_hash`, `param_name`, `hash64`, `hash32`,
 format, size, tile mode, `role_guess`, `slot_role`, the PNG path or the
 reason it is missing, `mip_used` when exported at a lower mip, and
 `texture_fallback {reason, role, rgba, source}` when no mip decodes.
