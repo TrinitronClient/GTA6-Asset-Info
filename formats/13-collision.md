@@ -48,6 +48,12 @@ many name spellings and prefixes; GTA V's packed {material index,
 procedural id}. Part of the material list is also missing (holes in the
 dump). No meta resource holds a material enum.
 
+Shader and parameter names turned out to be plain joaat
+([§12](12-materials.md#names)), but the surface ids are not a 15-bit
+shift or fold of it (2026-11-21: 402 material names, as given, lower and
+upper case, every shift 0–17, xor-fold, three moduli; also seeded joaat
+with `0xC3CCF6AD` and five other seeds: best score 7 of 402, chance 3).
+
 ## 13.3 Inferred surface categories
 
 Instead of names, each id gets an **inferred category** and confidence from

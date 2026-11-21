@@ -31,7 +31,10 @@ lights, interiors, paths and junctions all use it.
 **Field and enum names are the case-sensitive joaat** of the original
 names (`Position` = `0c928991`, `Flags` = `4b621302`, `StreetName`,
 `SpeedLimit`, `bIsStop`, `intensity`, `physicsDictionary` …). GTA V field
-names often resolve directly. Struct names do not follow this.
+names often resolve directly. Struct names do not follow this. The
+identifiers in `common.rpf`'s XML files (field names, enum values) resolve
+179 of the 2,650 struct and field hashes in a sample of `levels`, `data`
+and `packs` meta resources (2026-11-21), most of them case-sensitively.
 
 **Pool reference (confirmed):** u64 with the **1-based block index in bits
 0–12** and the **byte offset in bits 20+**.
